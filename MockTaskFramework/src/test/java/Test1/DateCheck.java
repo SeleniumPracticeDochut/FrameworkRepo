@@ -6,6 +6,8 @@ import java.util.Date;
 
 import org.testng.annotations.Test;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 public class DateCheck {
 	@Test
 	public void DateStamp() {
@@ -24,6 +26,11 @@ public class DateCheck {
 		Date cdate= new Date();
 		
 		System.out.println(cdate);
+		
+		LocalDate	futuredate1	=today.plusDays(50);
+		
+		System.out.println(futuredate1);
+
 		
 	}
 
